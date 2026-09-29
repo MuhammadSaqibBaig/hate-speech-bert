@@ -1,0 +1,8 @@
+torch>=2.2
+transformers>=4.40
+tokenizers
+scikit-learn>=1.3
+scipy
+pandas
+numpy
+matplotlib

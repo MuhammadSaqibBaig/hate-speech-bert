@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, please cite the paper below."
+title: "Automated Multi-Class Hate Speech Detection in Social Media Text Using Fine-Tuned BERT Models: experiments"
+type: software
+authors:
+  - family-names: "Baig"
+    given-names: "Muhammad Saqib"
+    affiliation: "Information Technology University of the Punjab"
+  - family-names: "Asif"
+    given-names: "Muhammad"
+    affiliation: "Information Technology University of the Punjab"
+license: MIT
+repository-code: "https://github.com/MuhammadSaqibBaig/hate-speech-bert"
+abstract: "Code, split definition, configurations, per-run metrics and predictions for a controlled comparison of seven classifiers (TF-IDF+LR, BiLSTM, DistilBERT, RoBERTa, HateBERT, toxic-bert, BERT-base) for three-class hate speech detection on the Davidson et al. corpus."
+keywords:
+  - hate speech detection
+  - BERT
+  - reproducibility

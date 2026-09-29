@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lp{0.68\linewidth}@{}}
+\toprule
+Setting & Value \\
+\midrule
+Split & stratified 70\,/\,10\,/\,20\,\% (train\,/\,validation\,/\,test), split seed 42, identical for all models \\
+Training seeds & 13, 21, 42, 87, 101 (five runs per model) \\
+Maximum sequence length & 128 tokens \\
+Optimizer & AdamW, learning rate $2\times10^{-5}$, weight decay 0.01 \\
+Batch size & 32 \\
+Schedule & linear decay, warm-up over 10\,\% of the steps \\
+Epochs / early stopping & at most 5 epochs; best epoch by validation macro-F1; stop after 2 epochs without improvement \\
+Regularization & default dropout of each pre-trained model (0.1); gradient clipping at 1.0 \\
+Class weights & $w_c = n / (K\,n_c)$ from the training set ($K=3$); used in the weighted cross-entropy loss \\
+Focal loss variant & $\gamma = 2.0$, $\alpha_c = w_c$ \\
+BiLSTM baseline & embedding 128, hidden 128 (bidirectional), dropout 0.3, 8 epochs, Adam (0.001), trained from scratch \\
+TF-IDF baseline & word 1--2-grams, minimum document frequency 2, sublinear TF, logistic regression ($C=1$, balanced class weights) \\
+Precision & mixed precision (fp16) on GPU \\
+\bottomrule
+\end{tabular}

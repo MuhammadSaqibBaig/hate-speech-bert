@@ -1,0 +1,12 @@
+\begin{tabular}{lccc}
+\toprule
+Comparison (macro-F1) & Difference & 95\% bootstrap CI & Welch $p$ (seeds) \\
+\midrule
+BERT-base vs TF-IDF + LR & +0.026 & [+0.012, +0.039] & -- \\
+BERT-base vs BiLSTM & +0.048 & [+0.036, +0.060] & $<$0.001 \\
+BERT-base vs DistilBERT & -0.003 & [-0.010, +0.003] & 0.587 \\
+BERT-base vs RoBERTa-base & -0.006 & [-0.014, +0.002] & 0.293 \\
+BERT-base vs HateBERT & -0.007 & [-0.015, +0.002] & 0.187 \\
+BERT-base vs toxic-bert & -0.004 & [-0.013, +0.004] & 0.390 \\
+\bottomrule
+\end{tabular}

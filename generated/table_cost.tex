@@ -1,0 +1,13 @@
+\begin{tabular}{lccccl}
+\toprule
+Model & Parameters (M) & Epochs & Training (min) & Inference (ms/post) & Device \\
+\midrule
+TF-IDF + LR & 0.08 & 1.0 & 0.1 & 0.03 & Tesla T4 \\
+BiLSTM & 1.24 & 8.0 & 0.2 & 0.02 & Tesla T4 \\
+DistilBERT & 66.96 & 4.6 & 2.2 & 0.22 & Tesla T4 \\
+RoBERTa-base & 124.65 & 4.8 & 4.5 & 0.37 & Tesla T4 \\
+HateBERT & 109.48 & 4.8 & 4.2 & 0.39 & Tesla T4 \\
+toxic-bert & 109.48 & 4.6 & 4.1 & 0.40 & Tesla T4 \\
+BERT-base & 109.48 & 4.8 & 4.2 & 0.40 & Tesla T4 \\
+\bottomrule
+\end{tabular}

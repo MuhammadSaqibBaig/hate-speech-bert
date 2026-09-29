@@ -1,0 +1,101 @@
+{
+ "model": "xlmr",
+ "seed": 21,
+ "train_on": "hatebr",
+ "n_test": 1400,
+ "n_train": 4900,
+ "n_val": 700,
+ "cm": [
+  [
+   632,
+   68
+  ],
+  [
+   65,
+   635
+  ]
+ ],
+ "acc": 0.905,
+ "support": [
+  700.0,
+  700.0
+ ],
+ "P": [
+  0.9067431850789096,
+  0.903271692745377
+ ],
+ "R": [
+  0.9028571428571428,
+  0.9071428571428571
+ ],
+ "F1": [
+  0.9047959914101646,
+  0.9052031361368496
+ ],
+ "spec": [
+  0.9071428571428571,
+  0.9028571428571428
+ ],
+ "macro": {
+  "P": 0.9050074389121433,
+  "R": 0.905,
+  "F1": 0.9049995637735071,
+  "spec": 0.905
+ },
+ "weighted": {
+  "P": 0.9050074389121433,
+  "R": 0.905,
+  "F1": 0.9049995637735071,
+  "spec": 0.905
+ },
+ "cost": {
+  "train_seconds": 186.48442554473877,
+  "epochs_run": 5,
+  "best_val_macro_f1": 0.9071199214499908,
+  "n_params": 278045186,
+  "infer_ms_per_post": 0.575077874319894,
+  "peak_gpu_mem_mb": 8234.0458984375
+ },
+ "hp": {
+  "max_len": 128,
+  "batch_size": 32,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_epochs": 5,
+  "patience": 2,
+  "grad_clip": 1.0,
+  "focal_gamma": 2.0,
+  "lstm": {
+   "emb": 128,
+   "hidden": 128,
+   "dropout": 0.3,
+   "max_len": 64,
+   "epochs": 8,
+   "batch_size": 64,
+   "lr": 0.001,
+   "min_freq": 2
+  },
+  "tfidf": {
+   "ngram": [
+    1,
+    2
+   ],
+   "min_df": 2,
+   "C": 1.0
+  }
+ },
+ "data_info": {
+  "rows_used": 7000
+ },
+ "env": {
+  "python": "3.12.13",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "cpu_count": 4,
+  "torch": "2.10.0+cu128",
+  "transformers": "5.0.0",
+  "sklearn": "1.6.1",
+  "gpu": "Tesla T4"
+ },
+ "cross": {}
+}

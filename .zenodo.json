@@ -1,0 +1,11 @@
+{
+  "title": "Automated Multi-Class Hate Speech Detection in Social Media Text Using Fine-Tuned BERT Models: experiment code and results",
+  "upload_type": "software",
+  "description": "Code, split definition, configurations, per-run metrics and predictions for a controlled comparison of seven classifiers for three-class hate speech detection on the Davidson et al. corpus. The corpus itself is not redistributed; it is downloaded from the authors' repository and checked by SHA-256.",
+  "creators": [
+    {"name": "Baig, Muhammad Saqib", "affiliation": "Information Technology University of the Punjab"},
+    {"name": "Asif, Muhammad", "affiliation": "Information Technology University of the Punjab"}
+  ],
+  "license": "MIT",
+  "keywords": ["hate speech detection", "BERT", "reproducibility"]
+}

@@ -1,0 +1,16 @@
+\begin{tabular}{lccc}
+\toprule
+Model and training data & Davidson test macro-F1 & HateXplain test macro-F1 & HateXplain test Hate F1 \\
+\midrule
+TF-IDF + LR (train: Davidson) & 0.731 & 0.426 & 0.473 \\
+BiLSTM (train: Davidson) & 0.708\,$\pm$\,0.005 & 0.435\,$\pm$\,0.008 & 0.425\,$\pm$\,0.025 \\
+DistilBERT (train: Davidson) & 0.759\,$\pm$\,0.009 & 0.458\,$\pm$\,0.016 & 0.530\,$\pm$\,0.017 \\
+RoBERTa-base (train: Davidson) & 0.762\,$\pm$\,0.008 & 0.449\,$\pm$\,0.008 & 0.535\,$\pm$\,0.010 \\
+HateBERT (train: Davidson) & 0.763\,$\pm$\,0.005 & 0.465\,$\pm$\,0.019 & 0.547\,$\pm$\,0.014 \\
+toxic-bert (train: Davidson) & 0.760\,$\pm$\,0.006 & 0.468\,$\pm$\,0.017 & 0.543\,$\pm$\,0.011 \\
+BERT-base (train: Davidson) & 0.756\,$\pm$\,0.009 & 0.472\,$\pm$\,0.011 & 0.549\,$\pm$\,0.008 \\
+\midrule
+BERT-base (train: HateXplain) & 0.540\,$\pm$\,0.034 & 0.688\,$\pm$\,0.004 & 0.763\,$\pm$\,0.008 \\
+HateBERT (train: HateXplain) & 0.532\,$\pm$\,0.017 & 0.682\,$\pm$\,0.002 & 0.774\,$\pm$\,0.003 \\
+\bottomrule
+\end{tabular}
